@@ -21,6 +21,8 @@
 		8AFF0C922C8AFAA0003F271A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF0C912C8AFAA0003F271A /* Home.swift */; };
 		8AFF0C942C8AFC7E003F271A /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF0C932C8AFC7E003F271A /* ReelsView.swift */; };
 		8AFF0C962C8AFD84003F271A /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF0C952C8AFD84003F271A /* TabBarButton.swift */; };
+		8AFF0C982C8B0F1A003F271A /* Reel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF0C972C8B0F1A003F271A /* Reel.swift */; };
+		8AFF0C9A2C8B10CE003F271A /* ReelsPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF0C992C8B10CE003F271A /* ReelsPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		8AFF0C912C8AFAA0003F271A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		8AFF0C932C8AFC7E003F271A /* ReelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
 		8AFF0C952C8AFD84003F271A /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
+		8AFF0C972C8B0F1A003F271A /* Reel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reel.swift; sourceTree = "<group>"; };
+		8AFF0C992C8B10CE003F271A /* ReelsPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 				8AFF0C912C8AFAA0003F271A /* Home.swift */,
 				8AFF0C932C8AFC7E003F271A /* ReelsView.swift */,
 				8AFF0C952C8AFD84003F271A /* TabBarButton.swift */,
+				8AFF0C992C8B10CE003F271A /* ReelsPlayer.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				8AFF0C8F2C8AF863003F271A /* MediaFile.swift */,
+				8AFF0C972C8B0F1A003F271A /* Reel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,8 +196,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AFF0C762C8AF517003F271A /* ContentView.swift in Sources */,
+				8AFF0C982C8B0F1A003F271A /* Reel.swift in Sources */,
 				8AFF0C942C8AFC7E003F271A /* ReelsView.swift in Sources */,
 				8AFF0C742C8AF517003F271A /* InstagramReelsUIApp.swift in Sources */,
+				8AFF0C9A2C8B10CE003F271A /* ReelsPlayer.swift in Sources */,
 				8AFF0C922C8AFAA0003F271A /* Home.swift in Sources */,
 				8AFF0C902C8AF863003F271A /* MediaFile.swift in Sources */,
 				8AFF0C962C8AFD84003F271A /* TabBarButton.swift in Sources */,

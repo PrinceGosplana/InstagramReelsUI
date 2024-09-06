@@ -5,14 +5,43 @@
 //  Created by Oleksandr Isaiev on 06.09.2024.
 //
 
+import AVKit
 import SwiftUI
 
 struct ReelsView: View {
+    
+    @State var currentReel = ""
+    /// Extracting avplayer from media file
+    @State var reels = MediaFile.mediaMocks.map { item -> Reel in
+        let url = Bundle.main.path(forResource: item.url, ofType: "mp4") ?? ""
+        let player = AVPlayer(url: URL(fileURLWithPath: url))
+        return Reel(player: player, mediaFile: item)
+    }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { proxy in
+            let size = proxy.size
+
+            TabView(selection: $currentReel) {
+                ForEach($reels) { $reel in
+
+                    ReelsPlayer(reel: $reel)
+                    // setting width
+                    .frame(width: size.width)
+                    .padding()
+                    /// Rotating content
+                    .rotationEffect(.init(degrees: -90))
+                }
+            }
+            /// Rotating View
+            .rotationEffect(.init(degrees: 90))
+            /// Since view is rotated setting height as width
+            .frame(width: size.height)
+            .tabViewStyle(.page(indexDisplayMode: .never))
+            .frame(width: size.width)
+        }
     }
 }
 
 #Preview {
-    ReelsView()
+    ContentView()
 }

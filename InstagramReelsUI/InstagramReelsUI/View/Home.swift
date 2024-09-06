@@ -10,7 +10,7 @@ import SwiftUI
 struct Home: View {
 
     private let images = ["house.fill", "magnifyingglass", "reels", "suit.heart", "person.circle"]
-    @State private var currentTab = "house.fill"
+    @State private var currentTab = "Reels"
 
     /// Hiding tabbar
     init() {
