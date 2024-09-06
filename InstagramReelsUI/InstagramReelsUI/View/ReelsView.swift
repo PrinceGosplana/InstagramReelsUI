@@ -27,9 +27,9 @@ struct ReelsView: View {
                     ReelsPlayer(reel: $reel)
                     // setting width
                     .frame(width: size.width)
-                    .padding()
                     /// Rotating content
                     .rotationEffect(.init(degrees: -90))
+                    .ignoresSafeArea(.all, edges: .top)
                 }
             }
             /// Rotating View
@@ -39,6 +39,7 @@ struct ReelsView: View {
             .tabViewStyle(.page(indexDisplayMode: .never))
             .frame(width: size.width)
         }
+        .ignoresSafeArea(.all, edges: .top)
     }
 }
 

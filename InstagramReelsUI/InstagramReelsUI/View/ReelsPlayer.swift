@@ -13,13 +13,8 @@ struct ReelsPlayer: View {
 
     var body: some View {
         ZStack {
-            VStack {
-                Text("Hello")
-
-                Spacer()
-
-                Text("Hello")
-                    .frame(maxWidth: .infinity, alignment: .leading)
+            if let player = reel.player {
+                CustomVideoPlayer(player: player)
             }
         }
     }
