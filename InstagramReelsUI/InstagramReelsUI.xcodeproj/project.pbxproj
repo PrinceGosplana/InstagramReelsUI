@@ -19,6 +19,8 @@
 		8AFF0C8C2C8AF6A8003F271A /* mario_01.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8AFF0C862C8AF6A8003F271A /* mario_01.mp4 */; };
 		8AFF0C902C8AF863003F271A /* MediaFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF0C8F2C8AF863003F271A /* MediaFile.swift */; };
 		8AFF0C922C8AFAA0003F271A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF0C912C8AFAA0003F271A /* Home.swift */; };
+		8AFF0C942C8AFC7E003F271A /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF0C932C8AFC7E003F271A /* ReelsView.swift */; };
+		8AFF0C962C8AFD84003F271A /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF0C952C8AFD84003F271A /* TabBarButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		8AFF0C862C8AF6A8003F271A /* mario_01.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mario_01.mp4; sourceTree = "<group>"; };
 		8AFF0C8F2C8AF863003F271A /* MediaFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFile.swift; sourceTree = "<group>"; };
 		8AFF0C912C8AFAA0003F271A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		8AFF0C932C8AFC7E003F271A /* ReelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
+		8AFF0C952C8AFD84003F271A /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				8AFF0C912C8AFAA0003F271A /* Home.swift */,
+				8AFF0C932C8AFC7E003F271A /* ReelsView.swift */,
+				8AFF0C952C8AFD84003F271A /* TabBarButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,9 +190,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AFF0C762C8AF517003F271A /* ContentView.swift in Sources */,
+				8AFF0C942C8AFC7E003F271A /* ReelsView.swift in Sources */,
 				8AFF0C742C8AF517003F271A /* InstagramReelsUIApp.swift in Sources */,
 				8AFF0C922C8AFAA0003F271A /* Home.swift in Sources */,
 				8AFF0C902C8AF863003F271A /* MediaFile.swift in Sources */,
+				8AFF0C962C8AFD84003F271A /* TabBarButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

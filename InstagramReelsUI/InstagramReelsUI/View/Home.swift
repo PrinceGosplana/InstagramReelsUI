@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct Home: View {
+
+    private let images = ["house.fill", "magnifyingglass", "reels", "suit.heart", "person.circle"]
+    @State private var currentTab = "house.fill"
+
+    /// Hiding tabbar
+    init() {
+        UITabBar.appearance().isHidden = true
+    }
+
     var body: some View {
         VStack(spacing: 0) {
-            TabView {
+            TabView(selection: $currentTab) {
                 Text("Home")
                     .tag("house.fill")
 
                 Text("Search")
                     .tag("magnifyingglass")
+
+                ReelsView()
+                    .tag("Reels")
 
                 Text("Liked")
                     .tag("suit.heart")
@@ -23,6 +35,14 @@ struct Home: View {
                 Text("Profile")
                     .tag("person.circle")
             }
+
+            HStack(spacing: 0) {
+                ForEach(images, id: \.self) {
+                    TabBarButton(image: $0, isSystemImage: $0 != "reels", currentTab: $currentTab)
+                }
+            }
+            .padding(.horizontal)
+            .padding(.vertical, 10)
         }
     }
 }
