@@ -31,7 +31,7 @@ struct TabBarButton: View {
                         .frame(width: 25, height: 25)
                 }
             }
-            .foregroundStyle(currentTab == image ? .primary : Color.gray)
+            .foregroundStyle(currentTab == image ? currentTab == "reels" ? .white : .primary : Color.gray)
             .frame(maxWidth: .infinity)
         }
     }

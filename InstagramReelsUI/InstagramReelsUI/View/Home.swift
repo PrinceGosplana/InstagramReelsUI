@@ -27,7 +27,7 @@ struct Home: View {
                     .tag("magnifyingglass")
 
                 ReelsView()
-                    .tag("Reels")
+                    .tag("reels")
 
                 Text("Liked")
                     .tag("suit.heart")
@@ -43,6 +43,8 @@ struct Home: View {
             }
             .padding(.horizontal)
             .padding(.vertical, 10)
+            .overlay(Divider(), alignment: .top)
+            .background(currentTab == "reels" ? .black : .clear)
         }
     }
 }
