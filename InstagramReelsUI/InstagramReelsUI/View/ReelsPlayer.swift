@@ -74,8 +74,12 @@ struct ReelsPlayer: View {
                         }
 
                         Spacer(minLength: 20)
+
+                        ActionButtons(reel: reel)
                     }
                 }
+                .padding(.horizontal)
+                .padding(.bottom, 20)
                 .foregroundStyle(.white)
                 .frame(maxHeight: .infinity, alignment: .bottom)
             }

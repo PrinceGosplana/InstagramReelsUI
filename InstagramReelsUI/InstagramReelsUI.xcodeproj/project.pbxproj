@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A27C9BC2C8C3E5300DFAFE1 /* ActionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A27C9BB2C8C3E5300DFAFE1 /* ActionButtons.swift */; };
 		8AFF0C742C8AF517003F271A /* InstagramReelsUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF0C732C8AF517003F271A /* InstagramReelsUIApp.swift */; };
 		8AFF0C762C8AF517003F271A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF0C752C8AF517003F271A /* ContentView.swift */; };
 		8AFF0C782C8AF519003F271A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFF0C772C8AF519003F271A /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A27C9BB2C8C3E5300DFAFE1 /* ActionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtons.swift; sourceTree = "<group>"; };
 		8AFF0C702C8AF517003F271A /* InstagramReelsUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramReelsUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFF0C732C8AF517003F271A /* InstagramReelsUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramReelsUIApp.swift; sourceTree = "<group>"; };
 		8AFF0C752C8AF517003F271A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A27C9BA2C8C3E4400DFAFE1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8A27C9BB2C8C3E5300DFAFE1 /* ActionButtons.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		8AFF0C672C8AF517003F271A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +93,7 @@
 		8AFF0C722C8AF517003F271A /* InstagramReelsUI */ = {
 			isa = PBXGroup;
 			children = (
+				8A27C9BA2C8C3E4400DFAFE1 /* Helpers */,
 				8AFF0C8E2C8AF6E7003F271A /* Model */,
 				8AFF0C8D2C8AF6E2003F271A /* View */,
 				8AFF0C732C8AF517003F271A /* InstagramReelsUIApp.swift */,
@@ -205,6 +216,7 @@
 				8AFF0C9A2C8B10CE003F271A /* ReelsPlayer.swift in Sources */,
 				8AFF0C922C8AFAA0003F271A /* Home.swift in Sources */,
 				8AFF0C902C8AF863003F271A /* MediaFile.swift in Sources */,
+				8A27C9BC2C8C3E5300DFAFE1 /* ActionButtons.swift in Sources */,
 				8AFF0C962C8AFD84003F271A /* TabBarButton.swift in Sources */,
 				8AFF0C9C2C8B120B003F271A /* CustomVideoPlayer.swift in Sources */,
 			);
