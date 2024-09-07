@@ -9,7 +9,7 @@ import AVKit
 import SwiftUI
 
 struct Reel: Identifiable {
-    let id = UUID()
+    let id = UUID().uuidString
     var player: AVPlayer?
     var mediaFile: MediaFile
 }
