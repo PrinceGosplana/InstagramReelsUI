@@ -22,6 +22,16 @@ struct ReelsPlayer: View {
             if let player = reel.player {
                 CustomVideoPlayer(player: player)
 
+                GeometryReader { proxy -> Color in
+                    let minY = proxy.frame(in: .global).minY
+                    let size = proxy.size
+
+                    DispatchQueue.main.async {
+                        -minY < (size.height / 2) && minY < (size.height / 2) ? player.play() : player.pause()
+                    }
+                    return .clear
+                }
+
                 /// Volume control
                 Color.black
                     .opacity(0.01)
